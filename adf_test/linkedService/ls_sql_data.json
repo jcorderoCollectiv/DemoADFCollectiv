@@ -1,11 +1,16 @@
 {
 	"name": "ls_sql_data",
 	"properties": {
+		"parameters": {
+			"database": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"server": "demo-srv-etlmetadata.database.windows.net",
-			"database": "demo_data",
+			"database": "@{linkedService().database}",
 			"encrypt": "mandatory",
 			"trustServerCertificate": false,
 			"authenticationType": "SystemAssignedManagedIdentity"
