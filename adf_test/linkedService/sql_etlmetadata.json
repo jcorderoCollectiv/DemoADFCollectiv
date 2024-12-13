@@ -4,8 +4,8 @@
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"server": "demo-srv-etl-0.database.windows.net",
-			"database": "demo-sql-etl-0",
+			"server": "demo-srv-etlmetadata.database.windows.net",
+			"database": "demodb",
 			"encrypt": "mandatory",
 			"trustServerCertificate": false,
 			"authenticationType": "SystemAssignedManagedIdentity"
